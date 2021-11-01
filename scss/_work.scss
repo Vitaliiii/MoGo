@@ -1,0 +1,140 @@
+.team-logo{
+    background-color: rgb(248, 248, 248);
+
+    .logo-bar{
+        width: 85%;
+        height: auto;
+        padding: 10px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+
+.card-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card-name {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card-prof {
+    color: #999;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social-item {
+    width: 55px;
+    height: 55px;
+    padding: 12px 10px;
+    background-color: #fce38a;
+    border-right: 1px solid #f38181;
+    text-decoration: none;
+    color: #f38181;
+    font-size: 30px;
+    line-height: 1;
+
+    transition: background .1s linear,
+        color .1s linear;
+    &:last-child {
+    /*вибираємо останню іконку*/
+    border-right: 0;
+    }
+    &:hover {
+    color: #fff;
+    background-color: #f38181;
+    }
+}
+
+.some-work{
+    width: 100%;
+    p{
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 80px auto;
+    }
+}
+
+.some-work-img{
+    height: auto;
+    display: flex;
+
+    .works-col {
+        flex: 1 1 0;
+    }
+    
+    .works-item {
+        position: relative;
+        background: linear-gradient(to bottom, #f38181, #fce38a);
+        &:hover .works-img {
+        opacity: .1;
+        }
+        &:hover .works-info {
+        opacity: 1;
+        }
+    }
+    
+    .works-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        transition: opacity .2s linear;
+    }
+    
+    .works-info {
+        width: 100%;
+        padding: 0 15px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 1;
+        opacity: 0;
+        text-align: center;
+        color: #fff;
+        transform: translate3d(0, -50%, 0);
+        transition: opacity .2s linear;
+    }
+    
+    .works-title {
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    
+    .works-text {
+        font-size: 15px;
+        font-weight: 300;
+        font-style: italic;
+    }
+}
+
+// slider comments
+
+.comment-slider-work{
+    margin: 40px auto;
+
+    @include media("max", "md"){
+                
+        display: block;
+
+    }
+    @include media("max", "sm"){
+        display: none;
+    }
+    #comment-text{
+        margin-top: 30px;
+    }
+}

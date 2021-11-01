@@ -1,0 +1,246 @@
+// .slick-slider{
+
+// }
+
+.slick-list{
+    overflow: hidden;
+}
+
+.slick-track{
+    display: flex;
+}
+
+//
+// head section text
+//
+
+
+.section-text-main{
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    margin: 0 auto 50px auto;
+
+    @include media("max", "lg"){
+
+        height: 150px;
+
+    }
+
+    .section-text-main-subtitle{
+        margin-top: 70px;
+        font-size: 24px;
+        font-family: "Kaushan Script";
+        color: rgb(51, 51, 51);
+        line-height: 1.2;
+            
+    }
+
+    .section-text-main-title{
+        margin-top: 20px;
+        font-size: 30px;
+        font-family: "Montserrat";
+        color: rgb(51, 51, 51);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2; 
+            
+    }
+
+    .text-main-line{
+        margin-top: 30px;
+    }
+}
+
+.line-grey{
+    height: 2px;
+    background-color: rgb(229, 229, 229);
+    margin-bottom: 20px;
+}
+
+
+.comment-slider-content{
+    width: 75%;
+    height: auto;
+    padding: 10px 0;
+    margin: 0 auto;
+    position: relative;
+
+    .slick-arrow{
+        position: absolute;
+    }
+    
+    
+    .comment-content-slides{
+        display: flex;
+        justify-content: center;
+        
+        .comment-img{
+            padding: 10px;
+            width: 170px;
+            height: 170px;
+            @include media("max", "lg"){
+                width: 130px;
+                height: 130px;
+            }
+            @include media("max", "md"){
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+        .comment-text{
+            width: 60%;
+            margin-left: 40px;
+
+            @include media("max", "lg"){
+                margin-left: 20px;
+                width: 65%;
+            }
+            @include media("max", "md"){
+            
+                width: 70%;
+                margin-left: 10px;
+            }
+            p{
+                @include media("max", "md"){
+            
+                    font-size: 12px;
+                }
+            }
+
+            h3{
+            
+                font-size: 24px;
+                font-family: "KaushanScript";
+                color: rgb(51, 51, 51);
+                line-height: 1.2;
+                text-align: left;
+                @include media("max", "md"){
+            
+                    font-size: 20px;
+                }
+                  
+            }
+        }
+    }
+}
+
+.slick-arrow{
+    position: absolute;
+}
+  
+.prev{
+    width: 20px;
+    height: 35px;
+    top: 80px;
+    cursor: pointer;
+    z-index: 200;
+    @include media("max", "xl"){
+        
+       
+    }
+    @include media("max", "lg"){
+        
+    
+    }
+}
+
+.next{
+    width: 20px;
+    height: 35px;
+    top: 80px;
+    right: 0px;
+    cursor: pointer;
+    z-index: 200;
+    @include media("max", "xl"){
+        
+    
+    }
+    @include media("max", "lg"){
+        
+    }
+}
+
+.intro-text{
+
+    height: 550px;
+    padding-top: 150px;
+    text-align: center;
+    background-image: url(img/Layer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    @include media("max", "lg"){
+        padding-top: 130px;
+        height: 450px;    
+        
+    }
+    @include media("max", "md"){
+        padding-top: 100px;
+        height: 350px;
+
+    }
+
+    .info-subtitle{
+        width: 900px;
+        height: auto;
+        margin: 0 auto;
+        color: white;
+        font-size: 77px;
+        font-family: 'Kaushan Script', cursive;
+        @include media("max", "lg"){
+
+            width: 700px;
+            font-size: 62px;
+        }
+        @include media("max", "md"){
+            width: 450px;
+            font-size: 42px;
+        }
+    }
+
+    .title-line{
+        width: 40px;
+        margin: 30px auto;
+        height: 3px;
+        background-color: white;
+        @include media("max", "md"){
+
+    
+        }
+    }
+
+    a{
+        width: 900px;
+        height: auto;
+        margin: 0 auto;
+        color: white;
+        margin-top: 20px;
+        padding: 10px 20px;
+        text-decoration-line: none;
+        border: 2px solid white;
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+
+        transition: background 0.1s linear, color 0.1s linear;
+
+        &:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        @include media("max", "md"){
+
+            width: 700px;
+    
+        }
+
+    }
+
+}
